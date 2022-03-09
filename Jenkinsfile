@@ -38,7 +38,7 @@ node {
 
             stage('Docker Images') {
                 parallel 'commandes': {
-                    sh "docker build -t epitech/commandes:latest ."
+                    sh "docker build -t epitech/commandes:${gitBranch} ."
                 }
             }
         }
