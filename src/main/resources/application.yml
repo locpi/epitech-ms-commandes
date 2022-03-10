@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: ms-commandes
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: password
+    packages:
+      trusted: fr.ippon
+  mail:
+    host: localhost
+    port: 1025
+    username: admin
+    password: password
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
